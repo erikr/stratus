@@ -15,6 +15,16 @@
       return;
     }
 
+    var menuDropdownToggle = closest(event.target, ".toggle-dropdown");
+    if (menuDropdownToggle) {
+      var menuItem = closest(menuDropdownToggle, ".menu-item-has-children");
+      if (menuItem) {
+        var isOpen = menuItem.classList.toggle("is-open");
+        menuDropdownToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      }
+      return;
+    }
+
     var dropdownToggle = closest(event.target, ".w-dropdown-toggle");
     if (dropdownToggle) {
       var dropdown = closest(dropdownToggle, ".w-dropdown");

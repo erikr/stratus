@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description | escape }}">{% endif %}
+    <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+    {% if page.description %}<meta property="og:description" content="{{ page.description | escape }}">{% endif %}
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/vendor/69d305208ce6a8c0cbe83de9_Stratus-Eye_Final_20102022_white-bg-131bde100a.png' | relative_url }}" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/vendor/69d3054f2ea60beeaaf02583_Stratus-Eye_Final_25102022_Black-bg-icon-492bb22aa6.png' | relative_url }}" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="{{ '/assets/css/webflow.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  </head>
+  <body>
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+    <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+  </body>
+</html>

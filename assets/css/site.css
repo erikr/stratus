@@ -1,0 +1,56 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.w-dropdown:hover .w-dropdown-list,
+.w-dropdown.is-open .w-dropdown-list {
+  display: block;
+}
+
+.w-nav-menu.is-open {
+  display: block;
+}
+
+.menu-button-2 {
+  cursor: pointer;
+}
+
+.faq-bottom {
+  overflow: hidden;
+  transition: max-height 220ms ease;
+}
+
+.faq-item:not(.is-open) .faq-bottom {
+  max-height: 0;
+}
+
+.faq-item.is-open .faq-bottom {
+  max-height: 600px;
+}
+
+.faq-top {
+  cursor: pointer;
+}
+
+.testimonial-slider-card {
+  overflow: hidden;
+}
+
+.testimonial-slider-card .slider:not(:first-child) {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .w-nav-menu {
+    display: none;
+  }
+
+  .w-nav-menu.is-open {
+    display: block;
+  }
+}

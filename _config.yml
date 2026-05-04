@@ -1,0 +1,11 @@
+title: Stratus Eye
+description: Premium cataract surgery and ophthalmology care in Suwanee, Georgia.
+url: "https://stratuseye.com"
+baseurl: ""
+markdown: kramdown
+plugins: []
+exclude:
+  - tools/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
